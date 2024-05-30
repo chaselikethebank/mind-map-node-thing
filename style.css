@@ -1,0 +1,82 @@
+:root {
+    --light-color: #ccc; /* Adjusted from white to a less white color */
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e;
+    color: var(--light-color);
+  }
+
+  
+  
+  .node {
+    stroke: var(--light-color);
+    stroke-width: 1.5px;
+    padding: 1rem;
+
+  }
+  
+  .link {
+    stroke: var(--light-color);
+    stroke-opacity: 0.6;
+    padding: 1rem;
+  }
+  
+  text {
+    font-family: sans-serif;
+    font-size: 12px;
+    fill: var(--light-color);
+    pointer-events: none;
+    padding: 1rem;
+  }
+
+  text.label {
+    font-family: sans-serif;
+    font-size: 14px;
+    fill: var(--light-color);
+    pointer-events: none;
+    text-anchor: middle;  
+    transform: translate(0, 2.5em); /* Move text slightly downward */
+}
+  
+  #form {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  #form input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  #form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8cff09;
+    color: #000;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #form button:hover {
+    background-color: #8cff09;
+  }
+  
+  #form button:active {
+    background-color: #8cff09;
+  }
+  
